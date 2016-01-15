@@ -1,0 +1,26 @@
+//
+//  PuzzleViewController.swift
+//  Picture Puzzle
+//
+//  Created by Filza Mazahir on 1/15/16.
+//  Copyright © 2016 Filza Mazahir. All rights reserved.
+//
+
+import UIKit
+class PuzzleViewController: UIViewController {
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+}

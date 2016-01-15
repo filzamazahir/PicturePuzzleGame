@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Picture_Puzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture Puzzle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PH-Yn-3iu">
+                                <rect key="frame" x="215" y="36" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aG9-4H-dTk">
+                                <rect key="frame" x="252" y="207" width="97" height="30"/>
+                                <state key="normal" title="Take a Picture"/>
+                                <connections>
+                                    <segue destination="y2Z-Oc-RYk" kind="show" id="swA-Fg-RtV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWr-2B-2Oi">
+                                <rect key="frame" x="217" y="287" width="167" height="30"/>
+                                <state key="normal" title="Use Picture from Gallery"/>
+                                <connections>
+                                    <segue destination="ddp-2h-LeQ" kind="show" id="pqA-FF-hcH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2PH-Yn-3iu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DoV-ZD-gmU"/>
+                            <constraint firstItem="aG9-4H-dTk" firstAttribute="top" secondItem="2PH-Yn-3iu" secondAttribute="bottom" constant="141" id="Rtz-On-e23"/>
+                            <constraint firstItem="pWr-2B-2Oi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VUw-yL-gVK"/>
+                            <constraint firstItem="2PH-Yn-3iu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="VxQ-ub-xIJ"/>
+                            <constraint firstItem="aG9-4H-dTk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WVB-ym-fDK"/>
+                            <constraint firstItem="pWr-2B-2Oi" firstAttribute="top" secondItem="aG9-4H-dTk" secondAttribute="bottom" constant="50" id="jBJ-al-wjR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="356"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="bpd-on-sFk">
+            <objects>
+                <viewController id="lin-nZ-H4g" customClass="CameraViewController" customModule="Picture_Puzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5g8-mT-XIK"/>
+                        <viewControllerLayoutGuide type="bottom" id="MP8-GV-0Sa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ulg-xS-BkA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N0r-0m-WmB">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="dU4-Hh-Rz3"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="HIW-bS-68w"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MhL-x0-AlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="356"/>
+        </scene>
+        <!--Puzzle View Controller-->
+        <scene sceneID="qnu-33-h6p">
+            <objects>
+                <viewController id="Lza-H3-aur" userLabel="Puzzle View Controller" customClass="PuzzleViewController" customModule="Picture_Puzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q7h-2w-oVe"/>
+                        <viewControllerLayoutGuide type="bottom" id="sGe-Hd-1Mn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HTq-vU-NF7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2KA-bd-0Wv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="1037"/>
+        </scene>
+        <!--Crop Image View Controller-->
+        <scene sceneID="gcp-ia-nCZ">
+            <objects>
+                <viewController id="ddp-2h-LeQ" userLabel="Crop Image View Controller" customClass="CropImageViewController" customModule="Picture_Puzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yyK-mI-Z5D"/>
+                        <viewControllerLayoutGuide type="bottom" id="YtW-Vi-PwS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kmm-Zt-Uyk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="feG-Bh-c81">
+                                <rect key="frame" x="50" y="50" width="500" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="GkM-W8-5mW"/>
+                                    <constraint firstAttribute="height" constant="500" id="UQP-4q-aHb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO4-yQ-qcw">
+                                <rect key="frame" x="260" y="562" width="80" height="30"/>
+                                <state key="normal" title="Load Image"/>
+                                <connections>
+                                    <action selector="loadImageButtonTapped:" destination="ddp-2h-LeQ" eventType="touchUpInside" id="k6z-J8-78w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfu-WD-hC2">
+                                <rect key="frame" x="52" y="562" width="142" height="30"/>
+                                <state key="normal" title="Take another Picture"/>
+                                <connections>
+                                    <action selector="shootPicture:" destination="ddp-2h-LeQ" eventType="touchUpInside" id="hAu-QP-d69"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eO4-yQ-qcw" firstAttribute="centerX" secondItem="kmm-Zt-Uyk" secondAttribute="centerX" id="8ak-8N-K9q"/>
+                            <constraint firstItem="jfu-WD-hC2" firstAttribute="leading" secondItem="kmm-Zt-Uyk" secondAttribute="leadingMargin" constant="32" id="BKl-kY-rNP"/>
+                            <constraint firstItem="feG-Bh-c81" firstAttribute="centerX" secondItem="kmm-Zt-Uyk" secondAttribute="centerX" id="I6e-Pl-6wp"/>
+                            <constraint firstItem="feG-Bh-c81" firstAttribute="centerY" secondItem="kmm-Zt-Uyk" secondAttribute="centerY" id="KYb-kS-3LM"/>
+                            <constraint firstItem="eO4-yQ-qcw" firstAttribute="centerY" secondItem="jfu-WD-hC2" secondAttribute="centerY" id="SLC-Bf-s2H"/>
+                            <constraint firstItem="YtW-Vi-PwS" firstAttribute="top" secondItem="eO4-yQ-qcw" secondAttribute="bottom" constant="8" id="v1I-o3-UnS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="feG-Bh-c81" id="WWH-4S-hTT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g20-0a-Cg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="1029"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h3y-bb-cFY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y2Z-Oc-RYk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B1a-2k-EXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lin-nZ-H4g" kind="relationship" relationship="rootViewController" id="Mah-rI-yTP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6f-hx-7qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="356"/>
+        </scene>
+    </scenes>
+</document>
