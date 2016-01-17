@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28D8135B1C4B3F5C00AAD65D /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D8135A1C4B3F5C00AAD65D /* Sound.swift */; };
+		28D8135F1C4B67C600AAD65D /* jeopardy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D8135E1C4B67C600AAD65D /* jeopardy.mp3 */; };
+		28D813621C4B67DE00AAD65D /* jaws.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D813601C4B67DE00AAD65D /* jaws.mp3 */; };
+		28D813631C4B67DE00AAD65D /* gladiator.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D813611C4B67DE00AAD65D /* gladiator.mp3 */; };
 		3C9012A11C496B5300D985B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9012A01C496B5300D985B0 /* AppDelegate.swift */; };
 		3C9012A31C496B5300D985B0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9012A21C496B5300D985B0 /* CameraViewController.swift */; };
 		3C9012A61C496B5300D985B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9012A41C496B5300D985B0 /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28D8135A1C4B3F5C00AAD65D /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		28D8135E1C4B67C600AAD65D /* jeopardy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jeopardy.mp3; path = "../../../../../../Downloads/Jeopardy-theme-song/jeopardy.mp3"; sourceTree = "<group>"; };
+		28D813601C4B67DE00AAD65D /* jaws.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jaws.mp3; path = ../../../../../../Downloads/jaws.mp3; sourceTree = "<group>"; };
+		28D813611C4B67DE00AAD65D /* gladiator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gladiator.mp3; path = ../../../../../../Downloads/gladiator.mp3; sourceTree = "<group>"; };
 		3C90129D1C496B5300D985B0 /* Picture Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Picture Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9012A01C496B5300D985B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C9012A21C496B5300D985B0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28D8135C1C4B679E00AAD65D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28D8135D1C4B67A700AAD65D /* Music */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28D8135D1C4B67A700AAD65D /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				28D8135E1C4B67C600AAD65D /* jeopardy.mp3 */,
+				28D813601C4B67DE00AAD65D /* jaws.mp3 */,
+				28D813611C4B67DE00AAD65D /* gladiator.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
 		3C9012941C496B5200D985B0 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +88,7 @@
 		3C90129F1C496B5300D985B0 /* Picture Puzzle */ = {
 			isa = PBXGroup;
 			children = (
+				28D8135C1C4B679E00AAD65D /* Supporting Files */,
 				3C9012A01C496B5300D985B0 /* AppDelegate.swift */,
 				3C9012A21C496B5300D985B0 /* CameraViewController.swift */,
 				3C9012A41C496B5300D985B0 /* Main.storyboard */,
@@ -72,6 +99,7 @@
 				3CD69C8E1C4976A9009168AE /* ImageUtility.swift */,
 				3CD69C901C4979B7009168AE /* CropImageViewController.swift */,
 				3CD69C921C49824C009168AE /* PuzzleViewController.swift */,
+				28D8135A1C4B3F5C00AAD65D /* Sound.swift */,
 			);
 			path = "Picture Puzzle";
 			sourceTree = "<group>";
@@ -135,8 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9012AB1C496B5300D985B0 /* LaunchScreen.storyboard in Resources */,
+				28D813621C4B67DE00AAD65D /* jaws.mp3 in Resources */,
 				3C9012A81C496B5300D985B0 /* Assets.xcassets in Resources */,
 				3C9012A61C496B5300D985B0 /* Main.storyboard in Resources */,
+				28D813631C4B67DE00AAD65D /* gladiator.mp3 in Resources */,
+				28D8135F1C4B67C600AAD65D /* jeopardy.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D8135B1C4B3F5C00AAD65D /* Sound.swift in Sources */,
 				3CD69C8F1C4976A9009168AE /* ImageUtility.swift in Sources */,
 				3CD69C911C4979B7009168AE /* CropImageViewController.swift in Sources */,
 				3C9012A31C496B5300D985B0 /* CameraViewController.swift in Sources */,
